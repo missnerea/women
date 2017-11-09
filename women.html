@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>White Doves</title>
+		<meta charset="UTF-8">
+  	<meta name="description" content="A website for a company that specializes in Weddin Dresses">
+  	<meta name="keywords" content="">
+  	<meta name="author" content="co-authored by Wilson Mwangeka, David Kariuki, Elaine Nerea, Brenda Okumu">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 		<link rel="icon" href="img/doveslo.png">
+		<!-- Minified Bootstrap CSS -->
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+ 		<!--Custom Styling-->
+ 		<link rel="stylesheet" href="css/styles.css">
+ 		<link rel="stylesheet" href="css/main_slider.css">
+
+ 		<!--Animate.css-->
+ 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+ 		<!--Google Fonts-->
+ 		<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+ 		<link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+
+ 		<!--Font Awesome-->
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+	</head>
+
+	<body>
+		<header class="main_h">
+
+		    <div class="row">
+		        <a class="logo" href="#"><p>White Dove Wedding Dresses</p></a>
+
+		        <div class="mobile-toggle">
+		            <span></span>
+		            <span></span>
+		            <span></span>
+		        </div>
+
+		        <nav>
+		            <ul>
+		                <li><a href=".sec01">Bride dresses</a></li>
+		                <li><a href=".sec02">Brides maid dresses</a></li>
+		                <li><a href=".sec03">Contact Us</a></li>
+		                <li><a href=".sec04">Section 04</a></li>
+		            </ul>
+		        </nav>
+
+		    </div> <!-- / row -->
+
+		</header>
+
+		<div class="hero">
+
+		    <h1><span>Precise</span><br>Wedding Perfection</h1>
+
+		    <div class="mouse">
+		        <span></span>
+		    </div>
+
+		</div>
+
+		<div class="row content">
+		    <h1 class=".sec01">Brides Dresses</h1>
+				<p> There are different kinds of weddin dresses </p>
+
+	 <div class="row">
+	   <div class="column">
+	     <img src="img/tumblr_nhn00zuMQS1r9apfzo1_500.jpg" alt="gown" style="width:100%">
+			 <columncaption class="figure-caption">
+						<button type="button" class="btn btn-default" data-toggle="modal" data-target="#1">Details</button>
+					</columncaption>
+		 </div>
+		 <div class="column">
+    <img src="img/Gorgeous-Long-Sleeve-Lace-Ball-Gown-Wedding-Dress-WDWD2817-a_1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/aline.jpg" style="width:100%">
+  </div>
+	<div class="column">
+		<img src="img/sheath.jpg" style="width:100%">
+	</div>
+</div>
+
+<!--Modals-->
+	<!--Start of Modal 1-->
+	<div id="1" class="modal fade" role="dialog">
+
+		<div class="modal-dialog modal-lg modal-sm">
+
+			<!--Modal Content-->
+			<div class="modal-content">
+
+				<div class="modal-header">
+
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<div class="modal-body">
+
+					<img src="img/tumblr_nhn00zuMQS1r9apfzo1_500.jpg" alt="gown">
+
+					<dl>
+					<p> <strong>Mermaid:</strong> Fitted on the body from the chest to the knee, then flares out close to the knee. </p>
+					<p>Price: $800.99</p>
+					</dl>
+					<button type="button" class="btn btn-success" data-toggle="modal" data-target="#add_to_cart">Add To Cart</button>
+
+
+				</div>
+
+				<div class="modal-footer">
+
+					<p>White Dove Bridals &copy; 2017</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+		    <h1 class=".sec02">Brides Maid Dresses</h1>
+		    <p>Different styles if brides maid dresses</p>
+				<div class="row">
+		 	   <div class="column">
+		 	     <img src="img/maids1.jpg" style="width:100%">
+					 <columncaption class="figure-caption">
+								<button type="button" class="btn btn-success" data-toggle="modal" data-target="#2">Details</button>
+							</columncaption>
+		 	   </div>
+		 		 <div class="column">
+		     <img src="img/maids2.jpg" style="width:100%">
+		   </div>
+		   <div class="column">
+		     <img src="img/maids6.jpg" style="width:100%">
+		   </div>
+		 	<div class="column">
+		 		<img src="img/maids10.jpg" style="width:100%">
+		 	</div>
+		 </div>
+		    <h1 class=".sec03">Contact Us</h1>
+				<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Kenya</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+			<option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+		    <h1 class=".sec04">Section 04</h1>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+		</div>
+
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!--Wow.js CDN-->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+		<script type="text/javascript"> new WOW().init(); </script>
+
+		<!-- Minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!--Custom Script-->
+		<script type="text/javaScript" src="js/scripts.js"></script>
+
+	</body>
+
+</html>
